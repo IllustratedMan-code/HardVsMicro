@@ -178,7 +178,7 @@
    [[file:The_Basic_Computer/Figure5.GIF]]
 ** <<figure6>>Figure 6
    A list of possible conditional expressions for the example computer.
-   [[file:The_Basic_Computer/Figure6.GIF]]
+   [[file:The_Basic_Computer/Figure6.png]]
 * Micro-programmed Control Unit
   In the Hard Wired control unit example, the signals that come from the control matrix do so because of
   an actual circuit that is wired to perform the conditional logic shown in [[figure5][Figure 5]]. In a *Micro-Programmed*
