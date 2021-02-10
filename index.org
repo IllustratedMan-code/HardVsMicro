@@ -1,4 +1,5 @@
 #+SETUPFILE: https://fniessen.github.io/org-html-themes/org/theme-readtheorg.setup
+#+TITLE: HardWiredVsMicroProgrammed;
 * Intro
   Describes a "big Picture" of computer systems through an example of a "simple" computer.
   This computer is *Big Endian* (reads the leftmost (most significant) bit first)
@@ -157,7 +158,7 @@
     This ensures that the next instruction is fetched by the end of the ring counter loop.
 *** How does the computer choose which signals to use for an opcode?
     - LM signal for example, the signal to load data into MAR according to [[figure1][Figure 1]]
-      ]]LM has a T3 on the LDA and SDA Rows and a T0 on the Fetch row
+      LM has a T3 on the LDA and SDA Rows and a T0 on the Fetch row
       1. An AND operation is performed between each Tx and its instruction signal (in the column).
       2. An OR operation is performed between each AND operation.
       3. As this can be represented with *bits* (1s or 0s) These operations can be simplified to an
@@ -171,10 +172,13 @@
       based on the value of the ACC negative flag. The arithmetic expression for the LP column is:
       *LP = T3*JN*NF + T3*JMP(Jump)*
     - A list of all the conditional expressions for the control signals (where * = AND, + = OR)
-      is located in [[figure5][Figure 5]]
+      is located in [[figure6][Figure 6]]
 ** <<figure5>>Figure 5
-   A list of expressions that shows how each control signal is activated..
+   A hard wired example of how the control matrix would work
    [[file:The_Basic_Computer/Figure5.GIF]]
+** <<figure6>>Figure 6
+   A list of possible conditional expressions for the example computer.
+   [[file:The_Basic_Computer/Figure6.GIF]]
 * Micro-programmed Control Unit
   In the Hard Wired control unit example, the signals that come from the control matrix do so because of
   an actual circuit that is wired to perform the conditional logic shown in [[figure5][Figure 5]]. In a *Micro-Programmed*

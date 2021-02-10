@@ -3,10 +3,10 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2021-02-04 Thu 19:13 -->
+<!-- 2021-02-10 Wed 17:34 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>&lrm;</title>
+<title>HardWiredVsMicroProgrammed;</title>
 <meta name="generator" content="Org mode" />
 <meta name="author" content="David" />
 <style type="text/css">
@@ -224,98 +224,100 @@
 </head>
 <body>
 <div id="content">
+<h1 class="title">HardWiredVsMicroProgrammed;</h1>
 <div id="table-of-contents">
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#org065b31a">1. Intro</a></li>
-<li><a href="#org5f84db2">2. The Basic Computer</a>
+<li><a href="#org402111e">1. Intro</a></li>
+<li><a href="#orgac477fe">2. The Basic Computer</a>
 <ul>
-<li><a href="#orgfeb2e17">2.1. Two Principal functional parts</a></li>
-<li><a href="#org4816077">2.2. Two types of control units</a></li>
-<li><a href="#org2be4dc9">2.3. figure 1</a>
+<li><a href="#org166ef7b">2.1. Two Principal functional parts</a></li>
+<li><a href="#org40a006a">2.2. Two types of control units</a></li>
+<li><a href="#org55c1d07">2.3. figure 1</a>
 <ul>
-<li><a href="#org4341550">2.3.1. Description of figure 1</a></li>
-<li><a href="#orgc6392da">2.3.2. Arithmetic-Logic-Unit (ALU)</a></li>
-<li><a href="#orgdcc75d3">2.3.3. RAM memory</a></li>
-<li><a href="#org09e704a">2.3.4. Program Counter (PC) Register</a></li>
+<li><a href="#orgb9c04c8">2.3.1. Description of figure 1</a></li>
+<li><a href="#org9d80a5f">2.3.2. Arithmetic-Logic-Unit (ALU)</a></li>
+<li><a href="#org2ae0548">2.3.3. RAM memory</a></li>
+<li><a href="#org6dc6b3d">2.3.4. Program Counter (PC) Register</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="#orga523692">3. Computer's Instruction Set</a>
+<li><a href="#orgc142de1">3. Computer's Instruction Set</a>
 <ul>
-<li><a href="#org587226f">3.1. Instruction</a>
+<li><a href="#org0a40e74">3.1. Instruction</a>
 <ul>
-<li><a href="#orge20e7f3">3.1.1. operation code (opcode)</a></li>
-<li><a href="#org3ea844a">3.1.2. operand</a></li>
+<li><a href="#orgb86d081">3.1.1. operation code (opcode)</a></li>
+<li><a href="#orge927cca">3.1.2. operand</a></li>
 </ul>
 </li>
-<li><a href="#orgce64051">3.2. Table 1</a>
+<li><a href="#org6799d34">3.2. Table 1</a>
 <ul>
-<li><a href="#org1e86110">3.2.1. Table 1 description</a></li>
+<li><a href="#org77ac46b">3.2.1. Table 1 description</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="#orgeed526e">4. Hard-Wired Control Unit</a>
+<li><a href="#orgd0a9ce2">4. Hard-Wired Control Unit</a>
 <ul>
-<li><a href="#org8a38d79">4.1. Figure 2</a>
+<li><a href="#orgf6d92bd">4.1. Figure 2</a>
 <ul>
-<li><a href="#org28513bb">4.1.1. Description of Figure 2</a></li>
+<li><a href="#org1b0255f">4.1.1. Description of Figure 2</a></li>
 </ul>
 </li>
-<li><a href="#org272b7f2">4.2. Figure 3</a></li>
-<li><a href="#org95fd2f8">4.3. Figure 4</a></li>
-<li><a href="#org1d36255">4.4. Table 2</a>
+<li><a href="#orga872c70">4.2. Figure 3</a></li>
+<li><a href="#org94f0ca9">4.3. Figure 4</a></li>
+<li><a href="#org655aba7">4.4. Table 2</a>
 <ul>
-<li><a href="#orgb1c58ce">4.4.1. Fetch instruction</a></li>
-<li><a href="#orge76e8bd">4.4.2. How does the computer choose which signals to use for an opcode?</a></li>
+<li><a href="#orgb954d5f">4.4.1. Fetch instruction</a></li>
+<li><a href="#orgf517b70">4.4.2. How does the computer choose which signals to use for an opcode?</a></li>
 </ul>
 </li>
-<li><a href="#org547c5a3">4.5. Figure 5</a></li>
+<li><a href="#org3879408">4.5. Figure 5</a></li>
+<li><a href="#org89a18c7">4.6. Figure 6</a></li>
 </ul>
 </li>
-<li><a href="#org0e91234">5. Micro-programmed Control Unit</a>
+<li><a href="#orgf701032">5. Micro-programmed Control Unit</a>
 <ul>
-<li><a href="#org40dada5">5.1. Micro-routine</a>
+<li><a href="#org28f4d65">5.1. Micro-routine</a>
 <ul>
-<li><a href="#org266e0a0">5.1.1. Micro-Instruction</a></li>
+<li><a href="#org62c9373">5.1.1. Micro-Instruction</a></li>
 </ul>
 </li>
-<li><a href="#org16fcd7e">5.2. Figure 7</a>
+<li><a href="#orgea4d350">5.2. Figure 7</a>
 <ul>
-<li><a href="#org3ed6fd9">5.2.1. 32 X 24 Control ROM(Read-only memory)</a></li>
-<li><a href="#orgb00234b">5.2.2. 24-bit Micro-instruction Register</a></li>
-<li><a href="#org8b56ddf">5.2.3. micro-counter register</a></li>
-<li><a href="#org2fd05ac">5.2.4. Multiplexer (data selector)</a></li>
-<li><a href="#org523a0a3">5.2.5. 16 X 5 Address ROM</a></li>
-<li><a href="#orgc4030c0">5.2.6. Note about signal edges</a></li>
+<li><a href="#orgae27766">5.2.1. 32 X 24 Control ROM(Read-only memory)</a></li>
+<li><a href="#org28b6348">5.2.2. 24-bit Micro-instruction Register</a></li>
+<li><a href="#org4e4c0e7">5.2.3. micro-counter register</a></li>
+<li><a href="#org47a6ec4">5.2.4. Multiplexer (data selector)</a></li>
+<li><a href="#org061d89c">5.2.5. 16 X 5 Address ROM</a></li>
+<li><a href="#org73e7d35">5.2.6. Note about signal edges</a></li>
 </ul>
 </li>
-<li><a href="#org0be707a">5.3. Table 3</a>
+<li><a href="#org30dccd7">5.3. Table 3</a>
 <ul>
-<li><a href="#orgf0931dd">5.3.1. Example using the ADD instruction</a></li>
+<li><a href="#org754e3b1">5.3.1. Example using the ADD instruction</a></li>
 </ul>
 </li>
-<li><a href="#org7bd19ec">5.4. Figure 8</a></li>
-<li><a href="#org4dbf108">5.5. Table 4</a>
+<li><a href="#org2c8794d">5.4. Figure 8</a></li>
+<li><a href="#org1f2c3cc">5.5. Table 4</a>
 <ul>
-<li><a href="#orga3f4aff">5.5.1. Microroutine Name (Mnemonic)</a></li>
-<li><a href="#org36cd27d">5.5.2. Columns Micro-Instruction Address to Address of Next Micro-Instruction</a></li>
-<li><a href="#org7d7de38">5.5.3. Comment</a></li>
+<li><a href="#org5715d23">5.5.1. Microroutine Name (Mnemonic)</a></li>
+<li><a href="#org32391dd">5.5.2. Columns Micro-Instruction Address to Address of Next Micro-Instruction</a></li>
+<li><a href="#org6f3c12a">5.5.3. Comment</a></li>
 </ul>
 </li>
-<li><a href="#org5ce0cf7">5.6. Fetch micro-routine</a></li>
-<li><a href="#orge8eb914">5.7. JN micro-routine</a></li>
+<li><a href="#orgbfd2d6e">5.6. Fetch micro-routine</a></li>
+<li><a href="#orgb8028c9">5.7. JN micro-routine</a></li>
 </ul>
 </li>
-<li><a href="#org7994a53">6. Hard-Wired vs. Micro-programmed Computers</a></li>
+<li><a href="#org6515eb2">6. Hard-Wired vs. Micro-programmed Computers</a></li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org065b31a" class="outline-2">
-<h2 id="org065b31a"><span class="section-number-2">1</span> Intro</h2>
+<div id="outline-container-org402111e" class="outline-2">
+<h2 id="org402111e"><span class="section-number-2">1</span> Intro</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 Describes a "big Picture" of computer systems through an example of a "simple" computer.
@@ -323,12 +325,12 @@ This computer is <b>Big Endian</b> (reads the leftmost (most significant) bit fi
 </p>
 </div>
 </div>
-<div id="outline-container-org5f84db2" class="outline-2">
-<h2 id="org5f84db2"><span class="section-number-2">2</span> The Basic Computer</h2>
+<div id="outline-container-orgac477fe" class="outline-2">
+<h2 id="orgac477fe"><span class="section-number-2">2</span> The Basic Computer</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-orgfeb2e17" class="outline-3">
-<h3 id="orgfeb2e17"><span class="section-number-3">2.1</span> Two Principal functional parts</h3>
+<div id="outline-container-org166ef7b" class="outline-3">
+<h3 id="org166ef7b"><span class="section-number-3">2.1</span> Two Principal functional parts</h3>
 <div class="outline-text-3" id="text-2-1">
 <ul class="org-ul">
 <li>Data path section where processing occurs</li>
@@ -337,8 +339,8 @@ leaves control sequence for Data path section</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org4816077" class="outline-3">
-<h3 id="org4816077"><span class="section-number-3">2.2</span> Two types of control units</h3>
+<div id="outline-container-org40a006a" class="outline-3">
+<h3 id="org40a006a"><span class="section-number-3">2.2</span> Two types of control units</h3>
 <div class="outline-text-3" id="text-2-2">
 <ul class="org-ul">
 <li>Hard wired controllers</li>
@@ -346,39 +348,39 @@ leaves control sequence for Data path section</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org2be4dc9" class="outline-3">
-<h3 id="org2be4dc9"><span class="section-number-3">2.3</span> <a id="org8ca3db3"></a>figure 1</h3>
+<div id="outline-container-org55c1d07" class="outline-3">
+<h3 id="org55c1d07"><span class="section-number-3">2.3</span> <a id="orga3715dc"></a>figure 1</h3>
 <div class="outline-text-3" id="text-2-3">
 
-<div id="orgb566d0c" class="figure">
+<div id="orga38ceb1" class="figure">
 <p><img src="The_Basic_Computer/Figure1.JPG" alt="Figure1.JPG" />
 </p>
 </div>
 </div>
 
-<div id="outline-container-org4341550" class="outline-4">
-<h4 id="org4341550"><span class="section-number-4">2.3.1</span> Description of figure 1</h4>
+<div id="outline-container-orgb9c04c8" class="outline-4">
+<h4 id="orgb9c04c8"><span class="section-number-4">2.3.1</span> Description of figure 1</h4>
 <div class="outline-text-4" id="text-2-3-1">
 <p>
 Data Path Sections
 </p>
 </div>
 <ol class="org-ol">
-<li><a id="orge7f78b0"></a>Single 12-bit-wide bus<br />
+<li><a id="org494e062"></a>Single 12-bit-wide bus<br />
 <div class="outline-text-5" id="text-2-3-1-1">
 <p>
 exchanges information between pairs of registers
 </p>
 </div>
 </li>
-<li><a id="orgb4c40cf"></a>Registers + 256 X 12 bit RAM<br />
+<li><a id="orgd1121d4"></a>Registers + 256 X 12 bit RAM<br />
 <div class="outline-text-5" id="text-2-3-1-2">
 <p>
 controlled by 16 control signals
 </p>
 </div>
 <ol class="org-ol">
-<li><a id="orgccc4d54"></a>Load(L) signals<br />
+<li><a id="orgc53f7d1"></a>Load(L) signals<br />
 <div class="outline-text-6" id="text-2-3-1-2-1">
 <p>
 Active L <b>clocks</b> <i>or loads</i> bus contents into register
@@ -386,7 +388,7 @@ on next <b>rising pulse</b> from the system clock
 </p>
 </div>
 </li>
-<li><a id="org56c97c6"></a>Enabled(E) signals<br />
+<li><a id="org57bb53d"></a>Enabled(E) signals<br />
 <div class="outline-text-6" id="text-2-3-1-2-2">
 <p>
 Active E signal enables the <b>tristate</b> outputs of the register
@@ -394,7 +396,7 @@ or makes contents of register available to bus
 </p>
 </div>
 </li>
-<li><a id="orga10542c"></a><i>register tranfer from</i> example<br />
+<li><a id="org4bfc7df"></a><i>register tranfer from</i> example<br />
 <div class="outline-text-6" id="text-2-3-1-2-3">
 <p>
 Contents of Register A to B
@@ -409,12 +411,12 @@ Contents of Register A to B
 </li>
 </ol>
 </div>
-<div id="outline-container-orgc6392da" class="outline-4">
-<h4 id="orgc6392da"><span class="section-number-4">2.3.2</span> Arithmetic-Logic-Unit (ALU)</h4>
+<div id="outline-container-org9d80a5f" class="outline-4">
+<h4 id="org9d80a5f"><span class="section-number-4">2.3.2</span> Arithmetic-Logic-Unit (ALU)</h4>
 <div class="outline-text-4" id="text-2-3-2">
 <p>
 A circuit capable of adding or subtracting two 12 bit numbers
-When the first bit of the Accumulator(ACC) is 1 (<a href="#org4a2d336">Negative Flag</a>)
+When the first bit of the Accumulator(ACC) is 1 (<a href="#org2ab166b">Negative Flag</a>)
 it is considered a negative number (represented using 2s compliment)
 </p>
 <ul class="org-ul">
@@ -431,21 +433,21 @@ it is considered a negative number (represented using 2s compliment)
 </ul>
 </div>
 </div>
-<div id="outline-container-orgdcc75d3" class="outline-4">
-<h4 id="orgdcc75d3"><span class="section-number-4">2.3.3</span> RAM memory</h4>
+<div id="outline-container-org2ae0548" class="outline-4">
+<h4 id="org2ae0548"><span class="section-number-4">2.3.3</span> RAM memory</h4>
 <div class="outline-text-4" id="text-2-3-3">
 </div>
 <ol class="org-ol">
-<li><a id="orge29bb22"></a>Registers<br />
+<li><a id="org29af3b3"></a>Registers<br />
 <ol class="org-ol">
-<li><a id="org14ded9a"></a><a id="orgdc8fe40"></a>Memory Address Register (MAR)<br />
+<li><a id="orgac8dfc9"></a><a id="org5aa5870"></a>Memory Address Register (MAR)<br />
 <div class="outline-text-6" id="text-2-3-3-1-1">
 <p>
 Register where address from memory is temporarily stored
 </p>
 </div>
 </li>
-<li><a id="org5c0fa2e"></a><a id="orgf8bfb70"></a>Memory Data Register (MDR)<br />
+<li><a id="org002a4bb"></a><a id="org45711d1"></a>Memory Data Register (MDR)<br />
 <div class="outline-text-6" id="text-2-3-3-1-2">
 <p>
 Register where data (<b>word</b>) corresponding to the address in <b>MAR</b> is temporarily stored
@@ -454,16 +456,16 @@ Register where data (<b>word</b>) corresponding to the address in <b>MAR</b> is 
 </li>
 </ol>
 </li>
-<li><a id="orgd5516e6"></a>Control Signals<br />
+<li><a id="org7e6740a"></a>Control Signals<br />
 <ol class="org-ol">
-<li><a id="org33234ba"></a>Read (R)<br />
+<li><a id="org0404a9c"></a>Read (R)<br />
 <div class="outline-text-6" id="text-2-3-3-2-1">
 <p>
 copies <b>Word</b> stored in RAM at address specified by <b>MAR</b> to <b>MDR</b>
 </p>
 </div>
 </li>
-<li><a id="org72605e4"></a>Write (W)<br />
+<li><a id="org985d6e8"></a>Write (W)<br />
 <div class="outline-text-6" id="text-2-3-3-2-2">
 <p>
 copies contents (<b>Word</b>) of <b>MDR</b> to RAM at address specified by <b>MAR</b>
@@ -472,9 +474,9 @@ copies contents (<b>Word</b>) of <b>MDR</b> to RAM at address specified by <b>MA
 </li>
 </ol>
 </li>
-<li><a id="org1f55333"></a>Steps to write and read data to the RAM<br />
+<li><a id="orgfbeff63"></a>Steps to write and read data to the RAM<br />
 <ol class="org-ol">
-<li><a id="orgf9e34de"></a>Read<br />
+<li><a id="org4764f4b"></a>Read<br />
 <div class="outline-text-6" id="text-2-3-3-3-1">
 <ol class="org-ol">
 <li>8-bit address is stored in register <b>MAR</b></li>
@@ -483,7 +485,7 @@ copies contents (<b>Word</b>) of <b>MDR</b> to RAM at address specified by <b>MA
 </ol>
 </div>
 </li>
-<li><a id="orgb7bebc4"></a>Write<br />
+<li><a id="org5448ac8"></a>Write<br />
 <div class="outline-text-6" id="text-2-3-3-3-2">
 <ol class="org-ol">
 <li>8-bit address is stored in register <b>MAR</b></li>
@@ -493,7 +495,7 @@ copies contents (<b>Word</b>) of <b>MDR</b> to RAM at address specified by <b>MA
 </ol>
 </div>
 </li>
-<li><a id="org02973c9"></a>Note about I/O implementation<br />
+<li><a id="orgf964ed2"></a>Note about I/O implementation<br />
 <div class="outline-text-6" id="text-2-3-3-3-3">
 <p>
 In this specific computer design, all I/O devices are <b>memory mapped</b>
@@ -507,19 +509,19 @@ in the ram.
 </li>
 </ol>
 </div>
-<div id="outline-container-org09e704a" class="outline-4">
-<h4 id="org09e704a"><span class="section-number-4">2.3.4</span> <a id="org8a79353"></a>Program Counter (PC) Register</h4>
+<div id="outline-container-org6dc6b3d" class="outline-4">
+<h4 id="org6dc6b3d"><span class="section-number-4">2.3.4</span> <a id="orgd6ea944"></a>Program Counter (PC) Register</h4>
 <div class="outline-text-4" id="text-2-3-4">
 </div>
 <ol class="org-ol">
-<li><a id="org51891f6"></a>Increment Program Counter (IP) control signal<br />
+<li><a id="orgf142e91"></a>Increment Program Counter (IP) control signal<br />
 <div class="outline-text-5" id="text-2-3-4-1">
 <p>
 When <b>PC</b> recieves an <b>IP</b> signal it increments contents of <b>PC</b> by 1
 </p>
 </div>
 </li>
-<li><a id="orgd680e4e"></a>Instruction Register (IR)<br />
+<li><a id="org4c74f5d"></a>Instruction Register (IR)<br />
 <div class="outline-text-5" id="text-2-3-4-2">
 <p>
 Holds the instruction that is about to be executed and provides
@@ -531,30 +533,30 @@ opcode to the controller/sequencer
 </div>
 </div>
 </div>
-<div id="outline-container-orga523692" class="outline-2">
-<h2 id="orga523692"><span class="section-number-2">3</span> Computer's Instruction Set</h2>
+<div id="outline-container-orgc142de1" class="outline-2">
+<h2 id="orgc142de1"><span class="section-number-2">3</span> Computer's Instruction Set</h2>
 <div class="outline-text-2" id="text-3">
 <p>
 A set of all instructions that the computer can process.
 </p>
 </div>
-<div id="outline-container-org587226f" class="outline-3">
-<h3 id="org587226f"><span class="section-number-3">3.1</span> Instruction</h3>
+<div id="outline-container-org0a40e74" class="outline-3">
+<h3 id="org0a40e74"><span class="section-number-3">3.1</span> Instruction</h3>
 <div class="outline-text-3" id="text-3-1">
 <p>
 A 12-bit <b>word</b> made up of a 4-bit <b>opcode</b> and an 8-bit <b>operand</b> address
 </p>
 </div>
-<div id="outline-container-orge20e7f3" class="outline-4">
-<h4 id="orge20e7f3"><span class="section-number-4">3.1.1</span> operation code (opcode)</h4>
+<div id="outline-container-orgb86d081" class="outline-4">
+<h4 id="orgb86d081"><span class="section-number-4">3.1.1</span> operation code (opcode)</h4>
 <div class="outline-text-4" id="text-3-1-1">
 <p>
 specifies the action to be taken by the computer
 </p>
 </div>
 </div>
-<div id="outline-container-org3ea844a" class="outline-4">
-<h4 id="org3ea844a"><span class="section-number-4">3.1.2</span> operand</h4>
+<div id="outline-container-orge927cca" class="outline-4">
+<h4 id="orge927cca"><span class="section-number-4">3.1.2</span> operand</h4>
 <div class="outline-text-4" id="text-3-1-2">
 <p>
 The data that the opcode operates on.
@@ -563,31 +565,31 @@ Located at a memory location specified by the 8 bit address in the instruction.
 </div>
 </div>
 </div>
-<div id="outline-container-orgce64051" class="outline-3">
-<h3 id="orgce64051"><span class="section-number-3">3.2</span> <a id="orgc279b9f"></a>Table 1</h3>
+<div id="outline-container-org6799d34" class="outline-3">
+<h3 id="org6799d34"><span class="section-number-3">3.2</span> <a id="org6144df8"></a>Table 1</h3>
 <div class="outline-text-3" id="text-3-2">
 
-<div id="orge32722f" class="figure">
+<div id="org375fe52" class="figure">
 <p><img src="The_Basic_Computer/Table1.png" alt="Table1.png" />
 </p>
 </div>
 </div>
-<div id="outline-container-org1e86110" class="outline-4">
-<h4 id="org1e86110"><span class="section-number-4">3.2.1</span> Table 1 description</h4>
+<div id="outline-container-org77ac46b" class="outline-4">
+<h4 id="org77ac46b"><span class="section-number-4">3.2.1</span> Table 1 description</h4>
 <div class="outline-text-4" id="text-3-2-1">
 </div>
 <ol class="org-ol">
-<li><a id="orgf63dfc8"></a>Op-Code<br />
+<li><a id="orgde84312"></a>Op-Code<br />
 <div class="outline-text-5" id="text-3-2-1-1">
 <p>
 The base 10 identity of the 4 bit code(in this computer) at the beginning of every instruction.
 Specifies the <i>action</i> that will be performed, such as loading, moving values.
-Not shown is the <a href="#orgf845dc8">Fetch Instruction</a> (an instruction used to load the next instruction) and
+Not shown is the <a href="#org225609c">Fetch Instruction</a> (an instruction used to load the next instruction) and
 can be thought of as having the opcode 0000, but it really doesn't require one (in Hard-Wired)
 </p>
 </div>
 </li>
-<li><a id="org2b99e92"></a>Opcode are specified in assembly by the <b>Mnemonic</b><br />
+<li><a id="org4062912"></a>Opcode are specified in assembly by the <b>Mnemonic</b><br />
 <div class="outline-text-5" id="text-3-2-1-2">
 <p>
 The Mnemonic makes the assembly code much more human readable
@@ -599,7 +601,7 @@ The Mnemonic makes the assembly code much more human readable
 </ul>
 </div>
 </li>
-<li><a id="org9d53cea"></a>Register Transfers<br />
+<li><a id="orgde916a3"></a>Register Transfers<br />
 <div class="outline-text-5" id="text-3-2-1-3">
 <p>
 This column shows how data is transferred from one register to another until the
@@ -610,7 +612,7 @@ action specified by the opcode has been accomplished.
 LDA (Loads data from RAM to accumlulator register)
 by following the steps required to access data from RAM
 <ol class="org-ol">
-<li>MAR &lt;&#x2013; IR moves (copies) the contents of the Instruction Register(<a href="#orga7a103e">IR</a>) to the Memory Address Register</li>
+<li>MAR &lt;&#x2013; IR moves (copies) the contents of the Instruction Register(<a href="#org4498b2d">IR</a>) to the Memory Address Register</li>
 <li>MDR &lt;&#x2013; RAM(MAR) moves the data at address specified by MAR to the MDR register</li>
 <li>ACC &lt;&#x2013; MDR moves the contents of MDR to ACC</li>
 <li>ACC &lt;&#x2013; RAM is then accomplished.</li>
@@ -618,11 +620,11 @@ by following the steps required to access data from RAM
 </ul>
 </div>
 </li>
-<li><a id="orgdb14678"></a>Active Control Signals<br />
+<li><a id="orge671e5b"></a>Active Control Signals<br />
 <div class="outline-text-5" id="text-3-2-1-4">
 <p>
 This column shows the signals that are required (power to signal pin)
-to perform the specified register transfers. Signal Pins are shown in <a href="#org8ca3db3">Figure 1</a>
+to perform the specified register transfers. Signal Pins are shown in <a href="#orga3715dc">Figure 1</a>
 </p>
 <ul class="org-ul">
 <li>MAR &lt;&#x2013; IR requires the EI (enable instruction register) and the LM (Load MAR) signals</li>
@@ -634,21 +636,21 @@ to perform the specified register transfers. Signal Pins are shown in <a href="#
 </div>
 </div>
 </div>
-<div id="outline-container-orgeed526e" class="outline-2">
-<h2 id="orgeed526e"><span class="section-number-2">4</span> Hard-Wired Control Unit</h2>
+<div id="outline-container-orgd0a9ce2" class="outline-2">
+<h2 id="orgd0a9ce2"><span class="section-number-2">4</span> Hard-Wired Control Unit</h2>
 <div class="outline-text-2" id="text-4">
 </div>
-<div id="outline-container-org8a38d79" class="outline-3">
-<h3 id="org8a38d79"><span class="section-number-3">4.1</span> <a id="org67f036a"></a>Figure 2</h3>
+<div id="outline-container-orgf6d92bd" class="outline-3">
+<h3 id="orgf6d92bd"><span class="section-number-3">4.1</span> <a id="orgb1fb9e0"></a>Figure 2</h3>
 <div class="outline-text-3" id="text-4-1">
 
-<div id="orgaf32381" class="figure">
+<div id="orge4800fd" class="figure">
 <p><img src="The_Basic_Computer/Figure2.GIF" alt="Figure2.GIF" />
 </p>
 </div>
 </div>
-<div id="outline-container-org28513bb" class="outline-4">
-<h4 id="org28513bb"><span class="section-number-4">4.1.1</span> Description of Figure 2</h4>
+<div id="outline-container-org1b0255f" class="outline-4">
+<h4 id="org1b0255f"><span class="section-number-4">4.1.1</span> Description of Figure 2</h4>
 <div class="outline-text-4" id="text-4-1-1">
 <p>
 Internal organization of a hard-wired control unit
@@ -657,7 +659,7 @@ A control unit consists of a Ring counter, an instruction decoder, and a Control
 </p>
 </div>
 <ol class="org-ol">
-<li><a id="orge0c0761"></a><a id="orga7a103e"></a>Instruction Register (IR)<br />
+<li><a id="orga0e8c56"></a><a id="org4498b2d"></a>Instruction Register (IR)<br />
 <div class="outline-text-5" id="text-4-1-1-1">
 <p>
 Contains the current instruction (opcode + operand)
@@ -666,7 +668,7 @@ Each line to the Instruction Decoder represents a bit of the opcode.
 </p>
 </div>
 </li>
-<li><a id="org0dbee09"></a>Instruction Decoder<br />
+<li><a id="org7f3b5c4"></a>Instruction Decoder<br />
 <div class="outline-text-5" id="text-4-1-1-2">
 <ol class="org-ol">
 <li>Receives the opcode sent to it by the IR</li>
@@ -675,11 +677,11 @@ Each line to the Instruction Decoder represents a bit of the opcode.
 Each line to the Control matrix represents a different signal (a set of pins)</li>
 </ol>
 <p>
-<a href="#org09fc3e4">Figure 4</a>
+<a href="#org1dc9676">Figure 4</a>
 </p>
 </div>
 </li>
-<li><a id="orga1a7b46"></a><a id="org4a2d336"></a>Negative Flag<br />
+<li><a id="org0b0c84f"></a><a id="org2ab166b"></a>Negative Flag<br />
 <div class="outline-text-5" id="text-4-1-1-3">
 <p>
 The leading bit ("negative flag") of the ACC register is fed into the control matrix allowing for
@@ -687,7 +689,7 @@ Boolean logic within the control matrix.
 </p>
 </div>
 </li>
-<li><a id="org50db30c"></a><a id="org1c4e020"></a>Ring Counter<br />
+<li><a id="orgba07d4c"></a><a id="orga56321a"></a>Ring Counter<br />
 <div class="outline-text-5" id="text-4-1-1-4">
 <p>
 Six <b>Consecutive</b> active signals that cycle continuously with every beat of the system clock
@@ -698,24 +700,24 @@ When the signal becomes active (ring pulse T0 means when T0 becomes active)</li>
 </ul>
 <p>
 <a href="https://www.electronics-tutorials.ws/sequential/seq_6.html">A useful article about ring counters</a>
-<a href="#orgf10b3e3">Table 2</a>
+<a href="#org4e375d5">Table 2</a>
 </p>
 </div>
 </li>
-<li><a id="orge6c57e2"></a>Control Matrix<br />
+<li><a id="org4c7ff8a"></a>Control Matrix<br />
 <div class="outline-text-5" id="text-4-1-1-5">
 <p>
 Most important part of the control unit
-The control matrix sends out signals to every register in the computer as shown in <a href="#org8ca3db3">Figure 1</a>
-and facilitates all of the instructions listed in <a href="#orgc279b9f">Table 1</a> using those signals.
+The control matrix sends out signals to every register in the computer as shown in <a href="#orga3715dc">Figure 1</a>
+and facilitates all of the instructions listed in <a href="#org6144df8">Table 1</a> using those signals.
 </p>
 </div>
 </li>
 </ol>
 </div>
 </div>
-<div id="outline-container-org272b7f2" class="outline-3">
-<h3 id="org272b7f2"><span class="section-number-3">4.2</span> <a id="org00f2694"></a>Figure 3</h3>
+<div id="outline-container-orga872c70" class="outline-3">
+<h3 id="orga872c70"><span class="section-number-3">4.2</span> <a id="org1f8c0b9"></a>Figure 3</h3>
 <div class="outline-text-3" id="text-4-2">
 <p>
  A visualization of the inner workings of the ring counter
@@ -723,8 +725,8 @@ and facilitates all of the instructions listed in <a href="#orgc279b9f">Table 1<
 </p>
 </div>
 </div>
-<div id="outline-container-org95fd2f8" class="outline-3">
-<h3 id="org95fd2f8"><span class="section-number-3">4.3</span> <a id="org09fc3e4"></a>Figure 4</h3>
+<div id="outline-container-org94f0ca9" class="outline-3">
+<h3 id="org94f0ca9"><span class="section-number-3">4.3</span> <a id="org1dc9676"></a>Figure 4</h3>
 <div class="outline-text-3" id="text-4-3">
 <p>
 A visualization of the inner working of the Instruction Decoder.
@@ -733,8 +735,8 @@ Shows how each opcode corresponds to an output line.
 </p>
 </div>
 </div>
-<div id="outline-container-org1d36255" class="outline-3">
-<h3 id="org1d36255"><span class="section-number-3">4.4</span> <a id="orgf10b3e3"></a>Table 2</h3>
+<div id="outline-container-org655aba7" class="outline-3">
+<h3 id="org655aba7"><span class="section-number-3">4.4</span> <a id="org4e375d5"></a>Table 2</h3>
 <div class="outline-text-3" id="text-4-4">
 <p>
 Times at which each <b>Control Signal</b> must be active in order to execute
@@ -742,11 +744,11 @@ the hard-wired Basic Computer's instructions.
 <img src="The_Basic_Computer/Table2.png" alt="Table2.png" />
 </p>
 </div>
-<div id="outline-container-orgb1c58ce" class="outline-4">
-<h4 id="orgb1c58ce"><span class="section-number-4">4.4.1</span> <a id="orgf845dc8"></a>Fetch instruction</h4>
+<div id="outline-container-orgb954d5f" class="outline-4">
+<h4 id="orgb954d5f"><span class="section-number-4">4.4.1</span> <a id="org225609c"></a>Fetch instruction</h4>
 <div class="outline-text-4" id="text-4-4-1">
 <p>
-The fetch instruction is executed every time the <a href="#org1c4e020">Ring Counter</a> loops. This facilitates the
+The fetch instruction is executed every time the <a href="#orga56321a">Ring Counter</a> loops. This facilitates the
 next instruction being sent to the Control unit. This instruction is actually executed
 during the same ring counter loop as any other instructions. So when an opcode is sent to
 the control matrix, fetch is executed <b>And</b> whatever instruction is specified by the opcode.
@@ -754,12 +756,12 @@ This ensures that the next instruction is fetched by the end of the ring counter
 </p>
 </div>
 </div>
-<div id="outline-container-orge76e8bd" class="outline-4">
-<h4 id="orge76e8bd"><span class="section-number-4">4.4.2</span> How does the computer choose which signals to use for an opcode?</h4>
+<div id="outline-container-orgf517b70" class="outline-4">
+<h4 id="orgf517b70"><span class="section-number-4">4.4.2</span> How does the computer choose which signals to use for an opcode?</h4>
 <div class="outline-text-4" id="text-4-4-2">
 <ul class="org-ul">
-<li>LM signal for example, the signal to load data into MAR according to <a href="#org8ca3db3">Figure 1</a>
-]]LM has a T3 on the LDA and SDA Rows and a T0 on the Fetch row
+<li>LM signal for example, the signal to load data into MAR according to <a href="#orga3715dc">Figure 1</a>
+LM has a T3 on the LDA and SDA Rows and a T0 on the Fetch row
 <ol class="org-ol">
 <li>An AND operation is performed between each Tx and its instruction signal (in the column).</li>
 <li>An OR operation is performed between each AND operation.</li>
@@ -770,45 +772,54 @@ fetch instruction is executed every ring counter cycle.</li>
 </ol></li>
 
 <li>JN(jump negative) Row
-All Tx in this row have an AND operation with the value of NF(<a href="#org4a2d336">Negative Flag</a>)
+All Tx in this row have an AND operation with the value of NF(<a href="#org2ab166b">Negative Flag</a>)
 as well as the instruction signal JN. This provides another level of conditional logic
 based on the value of the ACC negative flag. The arithmetic expression for the LP column is:
 <b>LP = T3*JN*NF + T3*JMP(Jump)</b></li>
 <li>A list of all the conditional expressions for the control signals (where * = AND, + = OR)
-is located in <a href="#org62f63cf">Figure 5</a></li>
+is located in <a href="#org861f033">Figure 6</a></li>
 </ul>
 </div>
 </div>
 </div>
-<div id="outline-container-org547c5a3" class="outline-3">
-<h3 id="org547c5a3"><span class="section-number-3">4.5</span> <a id="org62f63cf"></a>Figure 5</h3>
+<div id="outline-container-org3879408" class="outline-3">
+<h3 id="org3879408"><span class="section-number-3">4.5</span> <a id="org86c8fd9"></a>Figure 5</h3>
 <div class="outline-text-3" id="text-4-5">
 <p>
-A list of expressions that shows how each control signal is activated..
+A hard wired example of how the control matrix would work
 <img src="The_Basic_Computer/Figure5.GIF" alt="Figure5.GIF" />
 </p>
 </div>
 </div>
+<div id="outline-container-org89a18c7" class="outline-3">
+<h3 id="org89a18c7"><span class="section-number-3">4.6</span> <a id="org861f033"></a>Figure 6</h3>
+<div class="outline-text-3" id="text-4-6">
+<p>
+A list of possible conditional expressions for the example computer.
+<img src="The_Basic_Computer/Figure6.GIF" alt="Figure6.GIF" />
+</p>
 </div>
-<div id="outline-container-org0e91234" class="outline-2">
-<h2 id="org0e91234"><span class="section-number-2">5</span> Micro-programmed Control Unit</h2>
+</div>
+</div>
+<div id="outline-container-orgf701032" class="outline-2">
+<h2 id="orgf701032"><span class="section-number-2">5</span> Micro-programmed Control Unit</h2>
 <div class="outline-text-2" id="text-5">
 <p>
 In the Hard Wired control unit example, the signals that come from the control matrix do so because of
-an actual circuit that is wired to perform the conditional logic shown in <a href="#org62f63cf">Figure 5</a>. In a <b>Micro-Programmed</b>
+an actual circuit that is wired to perform the conditional logic shown in <a href="#org86c8fd9">Figure 5</a>. In a <b>Micro-Programmed</b>
 <b>Control Unit</b> an opcode is sent to the Control unit where it fetches a list of <b>Micro-Instructions</b> that
 together perform the instruction from a memory. The control unit can be thought of as a Computer within a computer.
 </p>
 </div>
-<div id="outline-container-org40dada5" class="outline-3">
-<h3 id="org40dada5"><span class="section-number-3">5.1</span> Micro-routine</h3>
+<div id="outline-container-org28f4d65" class="outline-3">
+<h3 id="org28f4d65"><span class="section-number-3">5.1</span> Micro-routine</h3>
 <div class="outline-text-3" id="text-5-1">
 <p>
 A <b>micro-routine</b> is a set of <b>Micro-Instructions</b> that implement an <b>instruction</b>.
 </p>
 </div>
-<div id="outline-container-org266e0a0" class="outline-4">
-<h4 id="org266e0a0"><span class="section-number-4">5.1.1</span> Micro-Instruction</h4>
+<div id="outline-container-org62c9373" class="outline-4">
+<h4 id="org62c9373"><span class="section-number-4">5.1.1</span> Micro-Instruction</h4>
 <div class="outline-text-4" id="text-5-1-1">
 <p>
 Similar to the instruction in a hard-wired computer, the micro-instruction operates on the
@@ -818,16 +829,16 @@ correspond to a control signal(LM for example).
 </div>
 </div>
 </div>
-<div id="outline-container-org16fcd7e" class="outline-3">
-<h3 id="org16fcd7e"><span class="section-number-3">5.2</span> Figure 7</h3>
+<div id="outline-container-orgea4d350" class="outline-3">
+<h3 id="orgea4d350"><span class="section-number-3">5.2</span> Figure 7</h3>
 <div class="outline-text-3" id="text-5-2">
 <p>
 A block diagram of an example micro-programmed control unit.
 <img src="The_Basic_Computer/Figure7.GIF" alt="Figure7.GIF" />
 </p>
 </div>
-<div id="outline-container-org3ed6fd9" class="outline-4">
-<h4 id="org3ed6fd9"><span class="section-number-4">5.2.1</span> 32 X 24 Control ROM(Read-only memory)</h4>
+<div id="outline-container-orgae27766" class="outline-4">
+<h4 id="orgae27766"><span class="section-number-4">5.2.1</span> 32 X 24 Control ROM(Read-only memory)</h4>
 <div class="outline-text-4" id="text-5-2-1">
 <ul class="org-ul">
 <li>32 24-bit long <b>Micro-Instructions</b>
@@ -839,35 +850,35 @@ A <b>Word</b> is 24 bits in the context of the micro-programmable Control unit</
 Each bit corresponds to a control signal</li>
 <li>8-bit next-address field
 address(in ROM) of next micro-instruction to be executed. which permits additional Boolean logic
-shown in <a href="#orgf3601e7">Figure 8</a>.</li>
+shown in <a href="#org9b4617f">Figure 8</a>.</li>
 </ol></li>
 <li>Micro-instructions(<b>Words</b>) from the Control ROM are fed into the micro-instruction register.</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-orgb00234b" class="outline-4">
-<h4 id="orgb00234b"><span class="section-number-4">5.2.2</span> 24-bit Micro-instruction Register</h4>
+<div id="outline-container-org28b6348" class="outline-4">
+<h4 id="org28b6348"><span class="section-number-4">5.2.2</span> 24-bit Micro-instruction Register</h4>
 <div class="outline-text-4" id="text-5-2-2">
 <ul class="org-ul">
-<li>analogous to the external computer's <a href="#orga7a103e">Instruction Register</a>.</li>
-<li>16 signal lines are the same as the lines coming from the control matrix in <a href="#org67f036a">Figure 2</a>
-and are connected to the signal pins shown in <a href="#org8ca3db3">Figure 1</a>.</li>
+<li>analogous to the external computer's <a href="#org4498b2d">Instruction Register</a>.</li>
+<li>16 signal lines are the same as the lines coming from the control matrix in <a href="#orgb1fb9e0">Figure 2</a>
+and are connected to the signal pins shown in <a href="#orga3715dc">Figure 1</a>.</li>
 <li>triggered by a falling clock edge <a href="https://en.wikipedia.org/wiki/Signal_edge">See this article about signal edges</a></li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org8b56ddf" class="outline-4">
-<h4 id="org8b56ddf"><span class="section-number-4">5.2.3</span> micro-counter register</h4>
+<div id="outline-container-org4e4c0e7" class="outline-4">
+<h4 id="org4e4c0e7"><span class="section-number-4">5.2.3</span> micro-counter register</h4>
 <div class="outline-text-4" id="text-5-2-3">
 <ul class="org-ul">
-<li>Analogous to the external computer's <a href="#org8a79353">Program counter Register</a></li>
+<li>Analogous to the external computer's <a href="#orgd6ea944">Program counter Register</a></li>
 <li>recieves input from the <b>Multiplexer</b></li>
 <li>triggered by a rising clock edge. <a href="https://en.wikipedia.org/wiki/Signal_edge">signal edges</a></li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org2fd05ac" class="outline-4">
-<h4 id="org2fd05ac"><span class="section-number-4">5.2.4</span> Multiplexer (data selector)</h4>
+<div id="outline-container-org47a6ec4" class="outline-4">
+<h4 id="org47a6ec4"><span class="section-number-4">5.2.4</span> Multiplexer (data selector)</h4>
 <div class="outline-text-4" id="text-5-2-4">
 <p>
 Chooses between 3 values to send to the micro-counter register
@@ -876,31 +887,31 @@ Chooses between 3 values to send to the micro-counter register
 <li>Output of Address ROM</li>
 <li>Output from Current Address Incrementer</li>
 <li>Address stored in next-address field of the current micro-instruction (CRJA)</li>
-<li>The conditional logic is shown in the description of <a href="#orgf3601e7">Figure 8</a></li>
+<li>The conditional logic is shown in the description of <a href="#org9b4617f">Figure 8</a></li>
 </ol>
 </div>
 </div>
-<div id="outline-container-org523a0a3" class="outline-4">
-<h4 id="org523a0a3"><span class="section-number-4">5.2.5</span> 16 X 5 Address ROM</h4>
+<div id="outline-container-org061d89c" class="outline-4">
+<h4 id="org061d89c"><span class="section-number-4">5.2.5</span> 16 X 5 Address ROM</h4>
 <div class="outline-text-4" id="text-5-2-5">
 <p>
-Fed by outer computer's <a href="#orga7a103e">Instruction Register</a>.
-The contents of the Instruction Register can be found in <a href="#org423935d">Table 3</a>
+Fed by outer computer's <a href="#org4498b2d">Instruction Register</a>.
+The contents of the Instruction Register can be found in <a href="#orgb9125ba">Table 3</a>
 </p>
 <ul class="org-ul">
 <li>maps opcode of external computer's instruction to starting address of corresponding micro-routine.
 The first Micro-Instruction of the routine</li>
 <li>Address zero of Address ROM contains address of fetch routine in the Control ROM</li>
-<li>Other addresses in ROM correspond to the opcodes(external computer) in <a href="#orgc279b9f">Table 1</a>
+<li>Other addresses in ROM correspond to the opcodes(external computer) in <a href="#org6144df8">Table 1</a>
 addresses are of micro-routines in Control ROM</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-orgc4030c0" class="outline-4">
-<h4 id="orgc4030c0"><span class="section-number-4">5.2.6</span> Note about signal edges</h4>
+<div id="outline-container-org73e7d35" class="outline-4">
+<h4 id="org73e7d35"><span class="section-number-4">5.2.6</span> Note about signal edges</h4>
 <div class="outline-text-4" id="text-5-2-6">
 <p>
-The micro-counter is triggered by a rising clock edge (along with all operations in data path in <a href="#org8ca3db3">Figure 1</a>).
+The micro-counter is triggered by a rising clock edge (along with all operations in data path in <a href="#orga3715dc">Figure 1</a>).
 The Micro-instruction register is triggered by a falling clock edge. In a series of steps:
 </p>
 <ol class="org-ol">
@@ -913,16 +924,16 @@ The Micro-instruction register is triggered by a falling clock edge. In a series
 </div>
 </div>
 
-<div id="outline-container-org0be707a" class="outline-3">
-<h3 id="org0be707a"><span class="section-number-3">5.3</span> <a id="org423935d"></a>Table 3</h3>
+<div id="outline-container-org30dccd7" class="outline-3">
+<h3 id="org30dccd7"><span class="section-number-3">5.3</span> <a id="orgb9125ba"></a>Table 3</h3>
 <div class="outline-text-3" id="text-5-3">
 <p>
 Mapping of Op-codes to the contents of the Address ROM in the Control Unit
 <img src="The_Basic_Computer/Table3.png" alt="Table3.png" />
 </p>
 </div>
-<div id="outline-container-orgf0931dd" class="outline-4">
-<h4 id="orgf0931dd"><span class="section-number-4">5.3.1</span> Example using the ADD instruction</h4>
+<div id="outline-container-org754e3b1" class="outline-4">
+<h4 id="org754e3b1"><span class="section-number-4">5.3.1</span> Example using the ADD instruction</h4>
 <div class="outline-text-4" id="text-5-3-1">
 <p>
 ADD instruction has the 3 opcode which maps to the 09 micro-routine start address.
@@ -931,8 +942,8 @@ The address is then goes to the multiplexer -&gt; micro-counter -&gt; Control RO
 </div>
 </div>
 </div>
-<div id="outline-container-org7bd19ec" class="outline-3">
-<h3 id="org7bd19ec"><span class="section-number-3">5.4</span> <a id="orgf3601e7"></a>Figure 8</h3>
+<div id="outline-container-org2c8794d" class="outline-3">
+<h3 id="org2c8794d"><span class="section-number-3">5.4</span> <a id="org9b4617f"></a>Figure 8</h3>
 <div class="outline-text-3" id="text-5-4">
 <p>
 Next address field of the micro-instruction register.
@@ -941,7 +952,7 @@ Next address field of the micro-instruction register.
 <ul class="org-ul">
 <li>CD is condition bit
 when CD is 1 (MAP is zero) the multiplexer's select lines produce a 00 or a 10 (binary)
-based on the <a href="#org4a2d336">Negative Flag</a> of the ACC register (of external computer). 00 
+based on the <a href="#org2ab166b">Negative Flag</a> of the ACC register (of external computer). 00 
 00 selects incrementer address, 10 selects CRJA address</li>
 <li>MAP causes next microinstruction to be obtained from address ROM
 When the MAP bit is 1 (Multiplexer's select line produce a 01(binary) (selects the address ROM))</li>
@@ -958,24 +969,24 @@ branching back to the fetch micro-routine.</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org4dbf108" class="outline-3">
-<h3 id="org4dbf108"><span class="section-number-3">5.5</span> <a id="orge4f19af"></a>Table 4</h3>
+<div id="outline-container-org1f2c3cc" class="outline-3">
+<h3 id="org1f2c3cc"><span class="section-number-3">5.5</span> <a id="org9a6cd25"></a>Table 4</h3>
 <div class="outline-text-3" id="text-5-5">
 <p>
-A micro-program (set of all micro-routines) that implements described instruction set from <a href="#orgc279b9f">3.2</a>
+A micro-program (set of all micro-routines) that implements described instruction set from <a href="#org6144df8">3.2</a>
 When loaded into Control ROM
 </p>
 
 
-<div id="org98265d4" class="figure">
+<div id="org0025f7b" class="figure">
 <p><img src="The_Basic_Computer/Table4.png" alt="Table4.png" />
 </p>
 </div>
 </div>
 
 
-<div id="outline-container-orga3f4aff" class="outline-4">
-<h4 id="orga3f4aff"><span class="section-number-4">5.5.1</span> Microroutine Name (Mnemonic)</h4>
+<div id="outline-container-org5715d23" class="outline-4">
+<h4 id="org5715d23"><span class="section-number-4">5.5.1</span> Microroutine Name (Mnemonic)</h4>
 <div class="outline-text-4" id="text-5-5-1">
 <p>
 The functional shortened name of each operation specified by the op-codes (Load Accumulator = LDA = 1)
@@ -983,15 +994,15 @@ Used in assembly programming.
 </p>
 </div>
 </div>
-<div id="outline-container-org36cd27d" class="outline-4">
-<h4 id="org36cd27d"><span class="section-number-4">5.5.2</span> Columns Micro-Instruction Address to Address of Next Micro-Instruction</h4>
+<div id="outline-container-org32391dd" class="outline-4">
+<h4 id="org32391dd"><span class="section-number-4">5.5.2</span> Columns Micro-Instruction Address to Address of Next Micro-Instruction</h4>
 <div class="outline-text-4" id="text-5-5-2">
 <p>
 When taken together, forms the raw contents (changing hexadecimal to binary) of the Micro Control ROM
 </p>
 </div>
 <ol class="org-ol">
-<li><a id="org00e8490"></a>Address-ROM Address (Op-code)<br />
+<li><a id="orgb904317"></a>Address-ROM Address (Op-code)<br />
 <div class="outline-text-5" id="text-5-5-2-1">
 <p>
 input of instruction from external computer that is equivalent to
@@ -999,7 +1010,7 @@ first address of Micro-instruction in micro-routine.
 </p>
 </div>
 </li>
-<li><a id="org05fd100"></a>Micro-Instruction Address<br />
+<li><a id="org46bfc35"></a>Micro-Instruction Address<br />
 <div class="outline-text-5" id="text-5-5-2-2">
 <p>
 Micro-Instruction addresses (2 bits) listed sequentially as part of a micro-routine
@@ -1014,47 +1025,47 @@ Micro-Instruction addresses (2 bits) listed sequentially as part of a micro-rout
 </ul>
 </div>
 </li>
-<li><a id="org4b42e58"></a>Control Signal Field<br />
+<li><a id="org8c7becf"></a>Control Signal Field<br />
 <div class="outline-text-5" id="text-5-5-2-3">
 <p>
-Same order of signals (bits) as the in <a href="#orgf10b3e3">Table 2</a>
+Same order of signals (bits) as the in <a href="#org4e375d5">Table 2</a>
 bits are equivalent to signals which are equivalent to pins.
 </p>
 </div>
 </li>
-<li><a id="org45f9f4d"></a>CD<br />
+<li><a id="org6662e23"></a>CD<br />
 <div class="outline-text-5" id="text-5-5-2-4">
 <p>
-Conditional bit, when 1 causes multiplexer to depend on value of <a href="#org4a2d336">NF</a> if MAP bit is 0
+Conditional bit, when 1 causes multiplexer to depend on value of <a href="#org2ab166b">NF</a> if MAP bit is 0
 </p>
 </div>
 </li>
-<li><a id="org305e1dd"></a>MAP<br />
+<li><a id="org383d2b1"></a>MAP<br />
 <div class="outline-text-5" id="text-5-5-2-5">
 <p>
 When MAP bit is 1, multiplexer sends address of the first Micro-Instruction for the next micro-routine
 </p>
 </div>
 </li>
-<li><a id="org6cf36fa"></a>Halt<br />
+<li><a id="org15589ec"></a>Halt<br />
 <div class="outline-text-5" id="text-5-5-2-6">
 <p>
 When HLT bit is 1, the Micro-Instruction Register will trigger the HALT signal, stopping the clock.
 </p>
 </div>
 </li>
-<li><a id="org525e1b8"></a>Address of Next micro-instruction<br />
+<li><a id="orgceb9314"></a>Address of Next micro-instruction<br />
 <div class="outline-text-5" id="text-5-5-2-7">
 <p>
 Only matters if HLT and MAP are not 1 (arbitrary values). The Micro-Instruction Address of the next
-Micro-Instruction in a non-branching program. Refer to description of <a href="#orgf3601e7">Figure 8</a> for more explanation.
+Micro-Instruction in a non-branching program. Refer to description of <a href="#org9b4617f">Figure 8</a> for more explanation.
 </p>
 </div>
 </li>
 </ol>
 </div>
-<div id="outline-container-org7d7de38" class="outline-4">
-<h4 id="org7d7de38"><span class="section-number-4">5.5.3</span> Comment</h4>
+<div id="outline-container-org6f3c12a" class="outline-4">
+<h4 id="org6f3c12a"><span class="section-number-4">5.5.3</span> Comment</h4>
 <div class="outline-text-4" id="text-5-5-3">
 <p>
 This column provides a simple explanation for what happens in the micro-programmable control unit
@@ -1063,8 +1074,8 @@ after each Micro-Instruction.
 </div>
 </div>
 </div>
-<div id="outline-container-org5ce0cf7" class="outline-3">
-<h3 id="org5ce0cf7"><span class="section-number-3">5.6</span> Fetch micro-routine</h3>
+<div id="outline-container-orgbfd2d6e" class="outline-3">
+<h3 id="orgbfd2d6e"><span class="section-number-3">5.6</span> Fetch micro-routine</h3>
 <div class="outline-text-3" id="text-5-6">
 <ul class="org-ul">
 <li>Control ROM addresses 0, 1, 2 (3 Micro-Instructions)
@@ -1072,7 +1083,7 @@ after each Micro-Instruction.
 <li>Micro-Instruction 0
 <ul class="org-ul">
 <li>Activates control Signal bits EP, LM</li>
-<li>Moves data from the <a href="#org8a79353">Program Counter Register</a> to the <a href="#orgdc8fe40">Memory Access Register</a></li>
+<li>Moves data from the <a href="#orgd6ea944">Program Counter Register</a> to the <a href="#org5aa5870">Memory Access Register</a></li>
 <li>MAR now contains address in RAM of the next instruction</li>
 <li>CD and MAP bits are zero, next Micro-Instruction corresponds to the address
 in the CRJA field (Micro-Instruction 1)</li>
@@ -1080,25 +1091,25 @@ in the CRJA field (Micro-Instruction 1)</li>
 <li>Micro-Instruction 1
 <ul class="org-ul">
 <li>Activates control Signal bit R</li>
-<li>Reads the data at adress MAR into <a href="#orgf8bfb70">Memory Data Register</a> from RAM</li>
+<li>Reads the data at adress MAR into <a href="#org45711d1">Memory Data Register</a> from RAM</li>
 <li>CD and MAP bits are zero, use CRJA field again (Micro-Instruction 2)</li>
 </ul></li>
 <li>Micro-Instruction 2
 <ul class="org-ul">
 <li>Activates control Signal bits ED, LI, IP</li>
-<li>ED, LI moves the <b>Word</b> from MDR to the <a href="#orga7a103e">Instruction Register</a></li>
+<li>ED, LI moves the <b>Word</b> from MDR to the <a href="#org4498b2d">Instruction Register</a></li>
 <li>IP increments the PC Register</li>
 <li>New instruction is in IR</li>
 <li>PC now points to the next instruction</li>
 <li>MAP is now 1, so the next micro-instruction is from Address ROM (specified by op-code)</li>
 </ul></li>
-<li>Signal pin description is in <a href="#org8ca3db3">Figure 1</a></li>
+<li>Signal pin description is in <a href="#orga3715dc">Figure 1</a></li>
 </ol></li>
 </ul>
 </div>
 </div>
-<div id="outline-container-orge8eb914" class="outline-3">
-<h3 id="orge8eb914"><span class="section-number-3">5.7</span> JN micro-routine</h3>
+<div id="outline-container-orgb8028c9" class="outline-3">
+<h3 id="orgb8028c9"><span class="section-number-3">5.7</span> JN micro-routine</h3>
 <div class="outline-text-3" id="text-5-7">
 <ul class="org-ul">
 <li>Control ROM addresses 0F, 10, 11
@@ -1106,7 +1117,7 @@ in the CRJA field (Micro-Instruction 1)</li>
 <li>Micro-Instruction 0F
 <ul class="org-ul">
 <li>Does nothing except set the CD bit to 1</li>
-<li>Execution of the next micro-instruction now depends on value of <a href="#org4a2d336">Negative Flag</a></li>
+<li>Execution of the next micro-instruction now depends on value of <a href="#org2ab166b">Negative Flag</a></li>
 <li>If NF is 0, increments Micro Program counter 0F + 1 = 10, Micro-Instruction 10</li>
 <li>If NF is 1, uses CRJA field (Micro-Instruction 11)</li>
 </ul></li>
@@ -1114,12 +1125,12 @@ in the CRJA field (Micro-Instruction 1)</li>
 <ul class="org-ul">
 <li>Does nothing (no set signal bits)</li>
 <li>MAP, CD = 0, uses CRJA field (Micro-Instruction 00 (Fetch routine))</li>
-<li><a href="#org8a79353">PC</a> is not altered, so next instruction is executed normally</li>
+<li><a href="#orgd6ea944">PC</a> is not altered, so next instruction is executed normally</li>
 </ul></li>
 <li>Micro-Instruction 11
 <ul class="org-ul">
 <li>Activates Control Signal Bits EI, LP</li>
-<li>Moves contents of <a href="#orga7a103e">IR</a>(least significan eight bits) to <a href="#org8a79353">PC</a></li>
+<li>Moves contents of <a href="#org4498b2d">IR</a>(least significan eight bits) to <a href="#orgd6ea944">PC</a></li>
 <li>Next Instruction at location corresponding to value of the least significant 8 bits of IR</li>
 <li>Control of the computer is transferred to the "Jump address"</li>
 </ul></li>
@@ -1128,8 +1139,8 @@ in the CRJA field (Micro-Instruction 1)</li>
 </div>
 </div>
 </div>
-<div id="outline-container-org7994a53" class="outline-2">
-<h2 id="org7994a53"><span class="section-number-2">6</span> Hard-Wired vs. Micro-programmed Computers</h2>
+<div id="outline-container-org6515eb2" class="outline-2">
+<h2 id="org6515eb2"><span class="section-number-2">6</span> Hard-Wired vs. Micro-programmed Computers</h2>
 <div class="outline-text-2" id="text-6">
 <ul class="org-ul">
 <li>Large majority of computers today are micro-programmed</li>
@@ -1146,7 +1157,7 @@ and can be easier to manufacture (cheaper).</li>
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: David</p>
-<p class="date">Created: 2021-02-04 Thu 19:13</p>
+<p class="date">Created: 2021-02-10 Wed 17:34</p>
 <p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
