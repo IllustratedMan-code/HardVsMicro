@@ -243,7 +243,7 @@
     The address is then goes to the multiplexer -> micro-counter -> Control ROM -> Micro-instruction register
 ** <<figure8>>Figure 8
    Next address field of the micro-instruction register.
-   [[file:The_Basic_Computer/Figure8.GIF]]
+   [[file:The_Basic_Computer/Figure8.jpg]]
    - CD is condition bit
      when CD is 1 (MAP is zero) the multiplexer's select lines produce a 00 or a 10 (binary)
      based on the [[negativeflag][Negative Flag]] of the ACC register (of external computer). 00 
